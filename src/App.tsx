@@ -9,8 +9,11 @@ function App() {
       email: { value: string }
     }
     const email = target.email.value
+    console.log(email)
 
+    // Code that causes ReDoS
     const emailExpression = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+    const foo = /.+?(?=\s*=)/
     if (emailExpression.test(email)) {
       console.log("OK")
     } else {

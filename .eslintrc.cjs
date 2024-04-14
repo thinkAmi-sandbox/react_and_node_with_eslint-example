@@ -6,10 +6,12 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     'plugin:security/recommended-legacy',
+    // 'plugin:regexp/recommended',
+    // 'plugin:redos/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'regexp'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
